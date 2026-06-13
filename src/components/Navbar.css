@@ -1,0 +1,25 @@
+.simple-navbar {
+  display: flex;
+  justify-content: flex-start; /* Aligns home cleanly to the left edge */
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #EAEAEA;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #6C25FF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-logo a:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,360 @@
+/* ==========================================================================
+   1. CORE GLOBAL STYLES & MODERN RE-THEME
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif; /* Cleaner, more modern tech font */
+}
+
+/* Base Structural Screen Wrapper */
+.screen {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  background-color: #FAFAFA;
+}
+
+/* ==========================================================================
+   2. MINIMALIST NAVIGATION BAR
+   ========================================================================== */
+.simple-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #EAEAEA;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827; /* Sophisticated deep ink black */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: -0.3px;
+}
+
+.nav-logo a:hover {
+  color: #059669; /* Accent Green Hover */
+}
+
+/* ==========================================================================
+   3. PREMIUM BUTTONS & INTERACTION ELEMENTS
+   ========================================================================== */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px; /* Slightly crisper corners */
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Primary Tech Button (Midnight Charcoal) */
+.btn-primary {
+  background-color: #111827; 
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.btn-primary:hover {
+  background-color: #1f2937;
+}
+
+/* Secondary Button (Clean Light Neutral) */
+.btn-secondary {
+  background-color: #E5E7EB;
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background-color: #D1D5DB;
+}
+
+/* Sticky Screen Action Submit Triggers */
+.btn-submit {
+  background-color: #111827;
+  color: #ffffff;
+  margin-top: auto;
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
+}
+
+.create-acc-btn {
+  background-color: #059669; /* Energetic Mint/Emerald Green for creation */
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+}
+
+.create-acc-btn:hover {
+  background-color: #047857;
+}
+
+/* ==========================================================================
+   4. LANDING SCREEN DESIGN SPECIFICS
+   ========================================================================== */
+.landing-screen {
+  justify-content: flex-end;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%);
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+  letter-spacing: -0.75px;
+}
+
+.subtitle, .form-subtitle {
+  font-size: 14px;
+  color: #6B7280; /* Neutral gray */
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* ==========================================================================
+   5. MODERN RE-THEMED FLOATING INPUT GROUPS
+   ========================================================================== */
+.form-screen {
+  justify-content: flex-start;
+  padding-top: 24px;
+  background-color: #ffffff;
+}
+
+.form-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  flex: 1;
+  margin-top: 10px;
+}
+
+.floating-input-group {
+  position: relative;
+}
+
+.floating-input-group input {
+  width: 100%;
+  padding: 16px 14px;
+  border: 1.5px solid #E5E7EB; /* Subtle, clean border line */
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  color: #111827;
+  background-color: #F9FAFB; /* Slightly tinted input fields */
+  transition: all 0.2s ease;
+}
+
+/* Active Highlight Focus State */
+.floating-input-group input:focus {
+  border-color: #059669; /* Switches to custom Mint on click */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.1);
+}
+
+/* Refined Absolute Label placement */
+.floating-input-group label {
+  position: absolute;
+  left: 12px;
+  top: -9px;
+  background-color: #ffffff;
+  padding: 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #059669; /* Highlight accent color */
+  pointer-events: none;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.required {
+  color: #EF4444;
+}
+
+/* Error Output Notification Banner */
+.auth-error-banner {
+  background-color: #FEF2F2;
+  color: #DC2626;
+  border: 1px solid #FCA5A5;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   6. CUSTOM RADIO MULTI-SELECTION ARRAYS
+   ========================================================================== */
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.radio-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.radio-options {
+  display: flex;
+  gap: 32px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4B5563;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom Vector Radio Circle Wrapper */
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D1D5DB;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.radio-label input:checked ~ .custom-radio {
+  border-color: #059669;
+  background-color: #059669;
+}
+
+/* Selected Center Inner Dot */
+.radio-label input:checked ~ .custom-radio::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   7. ACCOUNT PROFILE DASHBOARD MODULES
+   ========================================================================== */
+.profile-screen {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.header-nav {
+  padding: 22px 24px;
+  border-bottom: 1px solid #F3F4F6;
+  background-color: #ffffff;
+}
+
+.header-nav h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.3px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: 28px 24px;
+  gap: 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #F9FAFB 100%);
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Updated Vector Silhouette Background Context */
+.blank-avatar-svg {
+  background-color: #E5E7EB; /* Premium light concrete gray */
+  display: block;
+}
+
+/* Floating Camera Action Badge Overlay */
+.camera-icon-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #111827; /* Dark matching theme accent */
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: 2px solid #ffffff;
+}
+
+.profile-details h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.profile-details p {
+  font-size: 13px;
+  color: #6B7280;
+  margin-top: 4px;
+}
+
+.profile-description {
+  padding: 8px 24px;
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.dashed-divider {
+  margin: 28px 24px 0 24px;
+  border-bottom: 1.5px dashed #E5E7EB;
+}
