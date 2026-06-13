@@ -1,16 +1,47 @@
-# React + Vite
+# PopX Onboarding App — Custom Neo-Mint & Midnight Theme
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, modern multi-screen responsive React JS mobile onboarding flow featuring interactive form states, responsive custom elements, custom state replication, and dynamic data propagation. 
 
-Currently, two official plugins are available:
+This project breaks away from traditional rigid interview assessment palettes by implementing a clean **"Neo-Mint & Midnight Charcoal"** visual design kit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic Data Sync:** Standard registration values track user text configurations internally via React hooks and replicate live on the dashboard profile workspace immediately.
+- **Custom Floating Input Labels:** CSS absolute-transition floating labels layout that switches seamlessly to highlight focus modes on interaction.
+- **Custom Native Radio Buttons:** Rebuilt native checkbox buttons with semantic layout HTML wrappers and pure CSS custom check vectors.
+- **Responsive Mobile Frame Canvas:** Simulates a realistic 375px wide iOS/Android viewpoint structure complete with modern scroll metrics.
+- **Inline SVG Vector Art rendering:** Embedded profile structures that require no external image assets or standard asset loading overhead.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built Using
+
+- **React 19** (Functional hooks architecture)
+- **Vite** (Next-generation lightning-fast frontend compilation bundling)
+- **React Router Dom (v6)** (Client-side decoupled navigation path trees)
+- **Vanilla CSS3 Matrix Elements** (Custom variables, Flexbox layouts, absolute-context calculations)
+- **Google Fonts API** (Plus Jakarta Sans modern tech typeface layout rendering)
+
+---
+
+## 📦 Directory Blueprint
+
+```text
+popx-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── LandingScreen.jsx    # Pure splash access screen
+│   │   ├── LoginScreen.jsx      # Validation form entry checking logic
+│   │   ├── Navbar.css           # Navigation styling specifications
+│   │   ├── Navbar.jsx           # Minimalist top home controller navigation
+│   │   ├── ProfileScreen.jsx   # Custom layout state detail mapping sheet
+│   │   ├── SignupScreen.jsx    # Blank data collector form matrix
+│   │   └── ScreenStyles.css    # Unified custom neo-mint CSS engine
+│   ├── App.jsx                 # Dynamic state registry & route definitions
+│   ├── index.css               # Global canvas viewport wrappers
+│   └── main.jsx                # React execution rendering entry point
+├── package.json
+└── README.md
